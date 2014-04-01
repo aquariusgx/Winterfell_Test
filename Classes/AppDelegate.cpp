@@ -1,6 +1,7 @@
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
-
+#include "DemoController.h"
+#include "AchievementCell.h"
 USING_NS_CC;
 
 AppDelegate::AppDelegate() {
@@ -15,7 +16,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     // initialize director
     CCDirector* pDirector = CCDirector::sharedDirector();
     CCEGLView* pEGLView = CCEGLView::sharedOpenGLView();
-
+   
     pDirector->setOpenGLView(pEGLView);
 	
     // turn on display FPS
@@ -25,11 +26,23 @@ bool AppDelegate::applicationDidFinishLaunching() {
     pDirector->setAnimationInterval(1.0 / 60);
 
     // create a scene. it's an autorelease object
-    CCScene *pScene = HelloWorld::scene();
-
+    //CCScene *pScene = HelloWorld::scene();
+    
+    CCLayer* layer = new DemoController();
+    CCScene *pScene = CCScene::create();
+    pScene->addChild(layer);
     // run
     pDirector->runWithScene(pScene);
+    
+    
+    /*
+    CCLayer* layer =(CCLayer*)AchievementCellLoader::createCell();
 
+    CCScene *pScene = CCScene::create();
+    pScene->addChild(layer);
+    // run
+    pDirector->runWithScene(pScene);
+     */
     return true;
 }
 
