@@ -12,12 +12,14 @@
 enum
 {
     DEMO_LIST = 0,
+    DEMO_DIALOG,
     // last one
 	TESTS_COUNT,
 };
 
 const std::string g_aTestNames[TESTS_COUNT] = {
     "列表",
+    "Dialog",
    
 };
 

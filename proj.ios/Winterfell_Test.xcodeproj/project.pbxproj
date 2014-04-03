@@ -235,7 +235,6 @@
 		379BB9D417F03F3700829B88 /* CCSSceneReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 379BB99317F03F3700829B88 /* CCSSceneReader.cpp */; };
 		7855E0E1153FEF240059DD9A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7855E0DF153FEF240059DD9A /* Default.png */; };
 		81363BF718EA9E3A00789614 /* DemoController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81363BF518EA9E3A00789614 /* DemoController.cpp */; };
-		81363C0118EA9E9900789614 /* TableViewDemoScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81363BFB18EA9E9900789614 /* TableViewDemoScene.cpp */; };
 		81363C0818EA9FDA00789614 /* DemoScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81363C0418EA9FDA00789614 /* DemoScene.cpp */; };
 		81363C0918EA9FDA00789614 /* VisibleRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81363C0618EA9FDA00789614 /* VisibleRect.cpp */; };
 		81363C1818EAA57400789614 /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 81363C0D18EAA57300789614 /* AppDelegate.h */; };
@@ -246,7 +245,6 @@
 		81363C1D18EAA57400789614 /* HelloWorldScene.h in Sources */ = {isa = PBXBuildFile; fileRef = 81363C1518EAA57400789614 /* HelloWorldScene.h */; };
 		81363C1E18EAA57400789614 /* VisibleRect.h in Sources */ = {isa = PBXBuildFile; fileRef = 81363C1718EAA57400789614 /* VisibleRect.h */; };
 		81363C2A18EAA77E00789614 /* image in Resources */ = {isa = PBXBuildFile; fileRef = 81363C2418EAA77E00789614 /* image */; };
-		81363C2D18EAB4B100789614 /* AchievementCell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81363C2B18EAB4B100789614 /* AchievementCell.cpp */; };
 		81363C5E18EAB74600789614 /* achievement in Resources */ = {isa = PBXBuildFile; fileRef = 81363C5418EAB74600789614 /* achievement */; };
 		81363C6018EAB74600789614 /* ccbResources in Resources */ = {isa = PBXBuildFile; fileRef = 81363C5618EAB74600789614 /* ccbResources */; };
 		81363C6118EAB74600789614 /* fileLookup.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81363C5718EAB74600789614 /* fileLookup.plist */; };
@@ -257,6 +255,12 @@
 		81363C6618EAB74600789614 /* MainScene.js in Sources */ = {isa = PBXBuildFile; fileRef = 81363C5C18EAB74600789614 /* MainScene.js */; };
 		81363C6718EAB74600789614 /* rank in Resources */ = {isa = PBXBuildFile; fileRef = 81363C5D18EAB74600789614 /* rank */; };
 		81363C6918EAC5F200789614 /* achievementCell.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 81363C6818EAC5F200789614 /* achievementCell.ccbi */; };
+		81A7759B18EBA751000264C8 /* ListView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81A7759618EBA751000264C8 /* ListView.cpp */; };
+		81A7759C18EBA751000264C8 /* DemoLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81A7759818EBA751000264C8 /* DemoLayer.cpp */; };
+		81A775A118EBA7F2000264C8 /* GeneralDialog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81A7759F18EBA7F2000264C8 /* GeneralDialog.cpp */; };
+		81A7764D18EBA9F1000264C8 /* GeneralDialog.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 81A7764C18EBA9F1000264C8 /* GeneralDialog.ccbi */; };
+		81A7765018EBAE11000264C8 /* GeneralDialogLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81A7764E18EBAE11000264C8 /* GeneralDialogLayer.cpp */; };
+		81B8CAB918ECDF9100C0F611 /* ListViewLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81B8CAB718ECDF9100C0F611 /* ListViewLayer.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -754,8 +758,6 @@
 		7855E0DF153FEF240059DD9A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = SOURCE_ROOT; };
 		81363BF518EA9E3A00789614 /* DemoController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DemoController.cpp; path = ../Classes/DemoController.cpp; sourceTree = "<group>"; };
 		81363BF618EA9E3A00789614 /* DemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DemoController.h; path = ../Classes/DemoController.h; sourceTree = "<group>"; };
-		81363BFB18EA9E9900789614 /* TableViewDemoScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TableViewDemoScene.cpp; sourceTree = "<group>"; };
-		81363BFC18EA9E9900789614 /* TableViewDemoScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewDemoScene.h; sourceTree = "<group>"; };
 		81363C0318EA9FDA00789614 /* Demos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Demos.h; path = ../Classes/Demos.h; sourceTree = "<group>"; };
 		81363C0418EA9FDA00789614 /* DemoScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DemoScene.cpp; path = ../Classes/DemoScene.cpp; sourceTree = "<group>"; };
 		81363C0518EA9FDA00789614 /* DemoScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DemoScene.h; path = ../Classes/DemoScene.h; sourceTree = "<group>"; };
@@ -774,8 +776,6 @@
 		81363C1618EAA57400789614 /* VisibleRect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = VisibleRect.cpp; path = ../Classes/VisibleRect.cpp; sourceTree = "<group>"; };
 		81363C1718EAA57400789614 /* VisibleRect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VisibleRect.h; path = ../Classes/VisibleRect.h; sourceTree = "<group>"; };
 		81363C2418EAA77E00789614 /* image */ = {isa = PBXFileReference; lastKnownFileType = folder; path = image; sourceTree = "<group>"; };
-		81363C2B18EAB4B100789614 /* AchievementCell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AchievementCell.cpp; sourceTree = "<group>"; };
-		81363C2C18EAB4B100789614 /* AchievementCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AchievementCell.h; sourceTree = "<group>"; };
 		81363C5418EAB74600789614 /* achievement */ = {isa = PBXFileReference; lastKnownFileType = folder; name = achievement; path = "ccb/Published-iOS/achievement"; sourceTree = "<group>"; };
 		81363C5618EAB74600789614 /* ccbResources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ccbResources; path = "ccb/Published-iOS/ccbResources"; sourceTree = "<group>"; };
 		81363C5718EAB74600789614 /* fileLookup.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = fileLookup.plist; path = "ccb/Published-iOS/fileLookup.plist"; sourceTree = "<group>"; };
@@ -786,6 +786,17 @@
 		81363C5C18EAB74600789614 /* MainScene.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = MainScene.js; path = "ccb/Published-iOS/MainScene.js"; sourceTree = "<group>"; };
 		81363C5D18EAB74600789614 /* rank */ = {isa = PBXFileReference; lastKnownFileType = folder; name = rank; path = "ccb/Published-iOS/rank"; sourceTree = "<group>"; };
 		81363C6818EAC5F200789614 /* achievementCell.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = achievementCell.ccbi; path = "ccb/Published-iOS/achievementCell.ccbi"; sourceTree = "<group>"; };
+		81A7759618EBA751000264C8 /* ListView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ListView.cpp; sourceTree = "<group>"; };
+		81A7759718EBA751000264C8 /* ListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListView.h; sourceTree = "<group>"; };
+		81A7759818EBA751000264C8 /* DemoLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DemoLayer.cpp; path = ../Classes/LIstView/DemoLayer.cpp; sourceTree = "<group>"; };
+		81A7759918EBA751000264C8 /* DemoLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DemoLayer.h; path = ../Classes/LIstView/DemoLayer.h; sourceTree = "<group>"; };
+		81A7759F18EBA7F2000264C8 /* GeneralDialog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GeneralDialog.cpp; sourceTree = "<group>"; };
+		81A775A018EBA7F2000264C8 /* GeneralDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralDialog.h; sourceTree = "<group>"; };
+		81A7764C18EBA9F1000264C8 /* GeneralDialog.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = GeneralDialog.ccbi; path = "ccb/Published-iOS/GeneralDialog.ccbi"; sourceTree = "<group>"; };
+		81A7764E18EBAE11000264C8 /* GeneralDialogLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GeneralDialogLayer.cpp; sourceTree = "<group>"; };
+		81A7764F18EBAE11000264C8 /* GeneralDialogLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralDialogLayer.h; sourceTree = "<group>"; };
+		81B8CAB718ECDF9100C0F611 /* ListViewLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ListViewLayer.cpp; sourceTree = "<group>"; };
+		81B8CAB818ECDF9100C0F611 /* ListViewLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewLayer.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -1318,12 +1329,15 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				81A7759818EBA751000264C8 /* DemoLayer.cpp */,
+				81A7759918EBA751000264C8 /* DemoLayer.h */,
+				81A7759E18EBA7AD000264C8 /* Dialog */,
+				81A7759518EBA751000264C8 /* LIstView */,
 				81363C0318EA9FDA00789614 /* Demos.h */,
 				81363C0418EA9FDA00789614 /* DemoScene.cpp */,
 				81363C0518EA9FDA00789614 /* DemoScene.h */,
 				81363C0618EA9FDA00789614 /* VisibleRect.cpp */,
 				81363C0718EA9FDA00789614 /* VisibleRect.h */,
-				81363BF818EA9E9900789614 /* Contact */,
 				81363BF518EA9E3A00789614 /* DemoController.cpp */,
 				81363BF618EA9E3A00789614 /* DemoController.h */,
 				1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */,
@@ -1786,6 +1800,7 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				81A7764C18EBA9F1000264C8 /* GeneralDialog.ccbi */,
 				81363C5418EAB74600789614 /* achievement */,
 				81363C5618EAB74600789614 /* ccbResources */,
 				81363C5718EAB74600789614 /* fileLookup.plist */,
@@ -1812,16 +1827,28 @@
 			path = ../Resources;
 			sourceTree = "<group>";
 		};
-		81363BF818EA9E9900789614 /* Contact */ = {
+		81A7759518EBA751000264C8 /* LIstView */ = {
 			isa = PBXGroup;
 			children = (
-				81363BFB18EA9E9900789614 /* TableViewDemoScene.cpp */,
-				81363BFC18EA9E9900789614 /* TableViewDemoScene.h */,
-				81363C2B18EAB4B100789614 /* AchievementCell.cpp */,
-				81363C2C18EAB4B100789614 /* AchievementCell.h */,
+				81A7759618EBA751000264C8 /* ListView.cpp */,
+				81A7759718EBA751000264C8 /* ListView.h */,
+				81B8CAB718ECDF9100C0F611 /* ListViewLayer.cpp */,
+				81B8CAB818ECDF9100C0F611 /* ListViewLayer.h */,
 			);
-			name = Contact;
-			path = ../Classes/Contact;
+			name = LIstView;
+			path = ../Classes/LIstView;
+			sourceTree = "<group>";
+		};
+		81A7759E18EBA7AD000264C8 /* Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				81A7759F18EBA7F2000264C8 /* GeneralDialog.cpp */,
+				81A775A018EBA7F2000264C8 /* GeneralDialog.h */,
+				81A7764E18EBAE11000264C8 /* GeneralDialogLayer.cpp */,
+				81A7764F18EBAE11000264C8 /* GeneralDialogLayer.h */,
+			);
+			name = Dialog;
+			path = ../Classes/Dialog;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1901,6 +1928,7 @@
 				D4EF949C15BD2D8E00D803EB /* Icon-114.png in Resources */,
 				D4EF949E15BD2D9600D803EB /* Icon-72.png in Resources */,
 				D4EF94A015BD2D9800D803EB /* Icon-144.png in Resources */,
+				81A7764D18EBA9F1000264C8 /* GeneralDialog.ccbi in Resources */,
 				81363C6718EAB74600789614 /* rank in Resources */,
 				81363C5E18EAB74600789614 /* achievement in Resources */,
 				D41A0AD1160F154A004552AE /* Default-568h@2x.png in Resources */,
@@ -1999,6 +2027,7 @@
 				15A3D9A21682F7F9002FB0C5 /* cpArbiter.c in Sources */,
 				15A3D9A31682F7F9002FB0C5 /* cpArray.c in Sources */,
 				15A3D9A41682F7F9002FB0C5 /* cpBB.c in Sources */,
+				81A775A118EBA7F2000264C8 /* GeneralDialog.cpp in Sources */,
 				15A3D9A51682F7F9002FB0C5 /* cpBBTree.c in Sources */,
 				15A3D9A61682F7F9002FB0C5 /* cpBody.c in Sources */,
 				15A3D9A71682F7F9002FB0C5 /* cpCollision.c in Sources */,
@@ -2036,8 +2065,8 @@
 				15A3DA451682F826002FB0C5 /* CCParticleSystemQuadLoader.cpp in Sources */,
 				15A3DA461682F826002FB0C5 /* CCScale9SpriteLoader.cpp in Sources */,
 				15A3DA471682F826002FB0C5 /* CCScrollViewLoader.cpp in Sources */,
-				81363C2D18EAB4B100789614 /* AchievementCell.cpp in Sources */,
 				15A3DA481682F826002FB0C5 /* CCSpriteLoader.cpp in Sources */,
+				81A7765018EBAE11000264C8 /* GeneralDialogLayer.cpp in Sources */,
 				15A3DA491682F826002FB0C5 /* CCControl.cpp in Sources */,
 				15A3DA4A1682F826002FB0C5 /* CCControlButton.cpp in Sources */,
 				15A3DA4B1682F826002FB0C5 /* CCControlColourPicker.cpp in Sources */,
@@ -2098,6 +2127,7 @@
 				379BB99817F03F3700829B88 /* CCActionNode.cpp in Sources */,
 				379BB99917F03F3700829B88 /* CCActionObject.cpp in Sources */,
 				379BB99A17F03F3700829B88 /* CCArmatureAnimation.cpp in Sources */,
+				81A7759B18EBA751000264C8 /* ListView.cpp in Sources */,
 				379BB99B17F03F3700829B88 /* CCProcessBase.cpp in Sources */,
 				379BB99C17F03F3700829B88 /* CCTween.cpp in Sources */,
 				379BB99D17F03F3700829B88 /* CCArmature.cpp in Sources */,
@@ -2106,7 +2136,6 @@
 				379BB9A017F03F3700829B88 /* CCBatchNode.cpp in Sources */,
 				379BB9A117F03F3700829B88 /* CCDecorativeDisplay.cpp in Sources */,
 				379BB9A217F03F3700829B88 /* CCDisplayFactory.cpp in Sources */,
-				81363C0118EA9E9900789614 /* TableViewDemoScene.cpp in Sources */,
 				379BB9A317F03F3700829B88 /* CCDisplayManager.cpp in Sources */,
 				379BB9A417F03F3700829B88 /* CCSkin.cpp in Sources */,
 				379BB9A517F03F3700829B88 /* CCColliderDetector.cpp in Sources */,
@@ -2125,6 +2154,7 @@
 				379BB9B117F03F3700829B88 /* CCInputDelegate.cpp in Sources */,
 				379BB9B217F03F3700829B88 /* UIRootWidget.cpp in Sources */,
 				379BB9B317F03F3700829B88 /* UIWidget.cpp in Sources */,
+				81B8CAB918ECDF9100C0F611 /* ListViewLayer.cpp in Sources */,
 				379BB9B417F03F3700829B88 /* Layout.cpp in Sources */,
 				379BB9B617F03F3700829B88 /* LayoutParameter.cpp in Sources */,
 				379BB9B717F03F3700829B88 /* UILayoutDefine.cpp in Sources */,
@@ -2139,6 +2169,7 @@
 				379BB9C017F03F3700829B88 /* UIButton.cpp in Sources */,
 				379BB9C117F03F3700829B88 /* UICheckBox.cpp in Sources */,
 				379BB9C217F03F3700829B88 /* UIImageView.cpp in Sources */,
+				81A7759C18EBA751000264C8 /* DemoLayer.cpp in Sources */,
 				379BB9C317F03F3700829B88 /* UILabel.cpp in Sources */,
 				379BB9C417F03F3700829B88 /* UILabelAtlas.cpp in Sources */,
 				379BB9C517F03F3700829B88 /* UILabelBMFont.cpp in Sources */,

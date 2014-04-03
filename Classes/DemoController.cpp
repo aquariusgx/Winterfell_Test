@@ -10,7 +10,7 @@
 #include "Demos.h"
 #include "DemoScene.h"
 #include "VisibleRect.h"
-#include "TableViewDemoScene.h"
+#include "DemoLayer.h"
 
 #define LINE_SPACE          40
 
@@ -26,6 +26,11 @@ static DemoScene* CreateDemoScene(int nIdx)
     {
         case DEMO_LIST:
             pScene = new TableViewContactDemoScene();
+            break;
+        case DEMO_DIALOG:
+        {
+            pScene = new GeneralDialogScene();
+        }
             break;
         default:
             break;

@@ -1,7 +1,7 @@
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
 #include "DemoController.h"
-#include "AchievementCell.h"
+
 USING_NS_CC;
 
 AppDelegate::AppDelegate() {
