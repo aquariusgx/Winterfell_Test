@@ -13,21 +13,24 @@
 #include "cocos-ext.h"
 
 USING_NS_CC;
+USING_NS_CC_EXT;
 
-
-class GeneralDialogLayer :
+class GeneralLayer :
 public CCLayer
 {
 public:
-    GeneralDialogLayer();
+    GeneralLayer(CCLayer* layer);
     
-    ~GeneralDialogLayer();
-    
-    void menuCallBack(CCObject* pSender);
-    
-    virtual bool ccTouchBegan(CCTouch* touch, CCEvent* event);
-    virtual void ccTouchMoved(CCTouch* touch, CCEvent* event);
-    virtual void ccTouchEnded(CCTouch* touch, CCEvent* event);
+    ~GeneralLayer();
+    void closeLayer();
+
+private:
+    CCLayer* layer;
+private:
+    void closeOr(CCObject* pSender);
+    void stopAction();
+    //按钮响应事件
+    void touchUpInside(CCObject* pSender, CCControlEvent event);
 };
 
 #endif /* defined(__Winterfell_Test__GeneralDialogScene__) */

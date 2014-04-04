@@ -6,17 +6,19 @@
 //
 //
 
-#include "GeneralDialog.h"
+#include "DialogContentLayer.h"
+#include "DialogLayer.h"
 
-
-GeneralDialog::~GeneralDialog()
+DialogLayer::~DialogLayer()
 {
     CC_SAFE_RELEASE(title);
     CC_SAFE_RELEASE(content);
+    CC_SAFE_RELEASE(procssVar);
+    CC_SAFE_RELEASE(BackGround);
 }
 
 //Menu响应事件绑定
-SEL_MenuHandler GeneralDialog::onResolveCCBCCMenuItemSelector(CCObject * pTarget, const char* pSelectorName)
+SEL_MenuHandler DialogLayer::onResolveCCBCCMenuItemSelector(CCObject * pTarget, const char* pSelectorName)
 {
     //绑定响应事件
     //CCB_SELECTORRESOLVER_CCMENUITEM_GLUE(this, "onPressButton", HelloCocosBuilder::onPressButton);
@@ -24,17 +26,17 @@ SEL_MenuHandler GeneralDialog::onResolveCCBCCMenuItemSelector(CCObject * pTarget
 }
 
 //按钮响应事件绑定
-SEL_CCControlHandler GeneralDialog::onResolveCCBCCControlSelector(CCObject * pTarget, const char* pSelectorName)
+SEL_CCControlHandler DialogLayer::onResolveCCBCCControlSelector(CCObject * pTarget, const char* pSelectorName)
 {
 //    CCB_SELECTORRESOLVER_CCCONTROL_GLUE(this, "getAwardBtnClicked", GeneralDialog::getAwardBtnClicked);
-    CCB_SELECTORRESOLVER_CCCONTROL_GLUE(this, "onCloseClick", GeneralDialog::closeBtn);
-    CCB_SELECTORRESOLVER_CCCONTROL_GLUE(this, "onOk", GeneralDialog::okBtn);
-    CCB_SELECTORRESOLVER_CCCONTROL_GLUE(this, "onCancel", GeneralDialog::cancelBtn);
+    CCB_SELECTORRESOLVER_CCCONTROL_GLUE(this, "onCloseClick", DialogLayer::closeBtn);
+    CCB_SELECTORRESOLVER_CCCONTROL_GLUE(this, "onOk", DialogLayer::okBtn);
+    CCB_SELECTORRESOLVER_CCCONTROL_GLUE(this, "onCancel", DialogLayer::cancelBtn);
     return NULL;
 }
 
 //绑定变量
-bool GeneralDialog::onAssignCCBMemberVariable(CCObject * pTarget, const char* pMemberVariableName, CCNode * pNode)
+bool DialogLayer::onAssignCCBMemberVariable(CCObject * pTarget, const char* pMemberVariableName, CCNode * pNode)
 {
     CCB_MEMBERVARIABLEASSIGNER_GLUE(this, "Title", CCLabelTTF*, title);
     CCB_MEMBERVARIABLEASSIGNER_GLUE(this, "content", CCLabelTTF*, content);
@@ -44,7 +46,7 @@ bool GeneralDialog::onAssignCCBMemberVariable(CCObject * pTarget, const char* pM
 }
 
 //场景加载完成后处理函数
-void GeneralDialog::onNodeLoaded(CCNode* pNode, CCNodeLoader* pNodeLoader)
+void DialogLayer::onNodeLoaded(CCNode* pNode, CCNodeLoader* pNodeLoader)
 {
     CCLOG("GeneralDialog::onNodeLoaded");
     pProgressTimer = CCProgressTimer::create(procssVar);
@@ -59,13 +61,28 @@ void GeneralDialog::onNodeLoaded(CCNode* pNode, CCNodeLoader* pNodeLoader)
     BackGround->addChild(pProgressTimer);
 }
 
-void GeneralDialog::closeBtn(CCObject* obj)
+void DialogLayer::closeBtn(CCObject* obj)
 {
     CCLOG("GeneralDialog::closeBtn");
-
+    CCCallFunc* pCallback = CCCallFunc::create(this, callfunc_selector(DialogLayer::stopAction));
+    CCAction* popupLayer = CCSequence::create(
+                                              CCScaleTo::create(0.08, 0.9),
+                                              
+                                              CCScaleTo::create(0.08, 0.95),
+                                              
+                                              CCScaleTo::create(0.06, 0.7),
+                                              pCallback,
+                                              NULL);
+    runAction(popupLayer);
 }
 
-void GeneralDialog::okBtn(CCObject* obj)
+void DialogLayer::stopAction()
+{
+    GeneralLayer* layer =  (GeneralLayer*)getParent();
+    layer->closeLayer();
+}
+
+void DialogLayer::okBtn(CCObject* obj)
 {
     CCLOG("GeneralDialog::okBtn");
     content->setString("okBtn");
@@ -75,7 +92,7 @@ void GeneralDialog::okBtn(CCObject* obj)
     }
 }
 
-void GeneralDialog::cancelBtn(CCObject* obj)
+void DialogLayer::cancelBtn(CCObject* obj)
 {
     CCLOG("GeneralDialog::cancelBtn");
     content->setString("cencalBtn");

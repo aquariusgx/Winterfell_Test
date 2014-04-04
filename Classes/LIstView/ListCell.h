@@ -14,15 +14,15 @@
 USING_NS_CC;
 USING_NS_CC_EXT;
 
-class ListView :
+class ListCell :
 public CCTableViewCell,
 public CCBSelectorResolver,
 public CCBMemberVariableAssigner,
 public CCNodeLoaderListener
 {
 public:
-    CREATE_FUNC(ListView);
-    virtual ~ListView();
+    CREATE_FUNC(ListCell);
+    virtual ~ListCell();
     
     bool init();
     //--TODO --  CCBMemberVariableAssigner
@@ -33,11 +33,14 @@ public:
     //--TODO --  CCNodeLoaderListener 当此场景加载完成后，如果需要做一些操作，则在此方法中添加
     void onNodeLoaded(CCNode* pNode, CCNodeLoader* pNodeLoader);
     
+private:
+    //内容
+    CCLabelTTF* content;
+    //位置
+    CCLabelTTF* Num;
+    //背景
     CCSprite* cellBackGround;
-    CCLabelBMFont* titleLabel;
-    CCLabelTTF* ttf;
-    CCControlButton* getAwardBtn;
-    
+private:
     void getAwardBtnClicked(CCObject* obj);
 
 };
@@ -60,7 +63,7 @@ public:
     CCB_STATIC_NEW_AUTORELEASE_OBJECT_METHOD(ListViewLoader, loader);
     
 protected:
-    CCB_VIRTUAL_NEW_AUTORELEASE_CREATECCNODE_METHOD(ListView);
+    CCB_VIRTUAL_NEW_AUTORELEASE_CREATECCNODE_METHOD(ListCell);
 };
 
 #endif /* defined(__Winterfell_Test__AchievementCell__) */

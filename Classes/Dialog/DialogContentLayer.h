@@ -14,16 +14,16 @@
 USING_NS_CC;
 USING_NS_CC_EXT;
 
-class GeneralDialog :
+class DialogLayer :
 public CCLayer,
 public CCBSelectorResolver,
 public CCBMemberVariableAssigner,
 public CCNodeLoaderListener
 {
 public:
-    CREATE_FUNC(GeneralDialog);
+    CREATE_FUNC(DialogLayer);
     
-    virtual ~GeneralDialog();
+    virtual ~DialogLayer();
     
     //--TODO --  CCBMemberVariableAssigner
     virtual SEL_MenuHandler onResolveCCBCCMenuItemSelector(CCObject * pTarget, const char* pSelectorName);
@@ -46,17 +46,17 @@ public:
     void closeBtn(CCObject* obj);
     void okBtn(CCObject* obj);
     void cancelBtn(CCObject* obj);
-    
+    void stopAction();
 };
 
 
 
-class GeneralDialogLoader : public CCLayerLoader
+class DialogLayerLoader : public CCLayerLoader
 {
 public:
     static CCNode* createCell()
     {
-        CCNodeLoaderLibrary::sharedCCNodeLoaderLibrary()->registerCCNodeLoader("GeneralDialog", GeneralDialogLoader::loader());
+        CCNodeLoaderLibrary::sharedCCNodeLoaderLibrary()->registerCCNodeLoader("GeneralDialog", DialogLayerLoader::loader());
         CCBReader* reader = new CCBReader(CCNodeLoaderLibrary::sharedCCNodeLoaderLibrary());
         CCNode * node = reader->readNodeGraphFromFile("GeneralDialog.ccbi");
         reader->release();
@@ -64,10 +64,10 @@ public:
     }
     
 public:
-    CCB_STATIC_NEW_AUTORELEASE_OBJECT_METHOD(GeneralDialogLoader, loader);
+    CCB_STATIC_NEW_AUTORELEASE_OBJECT_METHOD(DialogLayerLoader, loader);
     
 protected:
-    CCB_VIRTUAL_NEW_AUTORELEASE_CREATECCNODE_METHOD(GeneralDialog);
+    CCB_VIRTUAL_NEW_AUTORELEASE_CREATECCNODE_METHOD(DialogLayer);
 };
 
 

@@ -8,7 +8,7 @@
 
 #include "DemoLayer.h"
 #include "ListViewLayer.h"
-#include "GeneralDialogLayer.h"
+#include "GeneralDialogTest.h"
 
 void TableViewContactDemoScene::runThisTest()
 {
@@ -22,10 +22,13 @@ void TableViewContactDemoScene::runThisTest()
 
 void GeneralDialogScene::runThisTest()
 {
-    
-    CCLayer * pLayer = new GeneralDialogLayer();
+   
+    CCLayer* pLayer = GeneralDialogTest::create();
+    pLayer->setPosition(ccp(0, 0));
+
+    pLayer->setContentSize(CCSizeMake(640, 960));
     addChild(pLayer);
-    pLayer->release();
+    //pLayer->release();
     CCDirector::sharedDirector()->replaceScene(this);
     
 }

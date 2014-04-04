@@ -1,22 +1,25 @@
 //
-//  ListView.h
-//  Winterfell_Test
+//  ContactDemoScene.h
+//  NutRock_Demo
 //
-//  Created by 史晋鹏 on 14-4-3.
+//  Created by mac on 13-11-26.
 //
 //
 
-#ifndef __Winterfell_Test__ListView__
-#define __Winterfell_Test__ListView__
+#ifndef __NutRock_Demo__ContactDemoScene__
+#define __NutRock_Demo__ContactDemoScene__
 
 #include "cocos2d.h"
 #include "cocos-ext.h"
-
-
+#include "DemoScene.h"
 
 USING_NS_CC;
-USING_NS_CC_EXT;
 
+class TableViewContactDemoScene : public DemoScene
+{
+public:
+    virtual void runThisTest();
+};
 
 class ListViewLayer :
 public CCLayer,
@@ -27,6 +30,8 @@ public:
     ListViewLayer();
     
     ~ListViewLayer();
+    
+    virtual bool init();
     
     virtual void scrollViewDidScroll(cocos2d::extension::CCScrollView* view);
     
@@ -40,13 +45,17 @@ public:
     virtual cocos2d::extension::CCTableViewCell* tableCellAtIndex(cocos2d::extension::CCTableView *table, unsigned int idx);
     //一共多少项
     virtual unsigned int numberOfCellsInTableView(cocos2d::extension::CCTableView *table);
-
-private:
-    void valueChanged( CCObject *sender, CCControlEvent controlEvent );
-
+    
+    CREATE_FUNC(ListViewLayer);
+    
+    void menuCallBack(CCObject* pSender);
+    
+    virtual bool ccTouchBegan(CCTouch* touch, CCEvent* event);
+    virtual void ccTouchMoved(CCTouch* touch, CCEvent* event);
+    virtual void ccTouchEnded(CCTouch* touch, CCEvent* event);
 private:
     bool m_bTable;
     bool m_bSlider;
 };
 
-#endif /* defined(__Winterfell_Test__ListView__) */
+#endif /* defined(__NutRock_Demo__ContactDemoScene__) */

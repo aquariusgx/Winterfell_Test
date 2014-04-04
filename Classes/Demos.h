@@ -23,4 +23,6 @@ const std::string g_aTestNames[TESTS_COUNT] = {
    
 };
 
+static std::string m_data[20] ;
+
 #endif

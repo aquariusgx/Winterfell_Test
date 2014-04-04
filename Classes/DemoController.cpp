@@ -25,7 +25,9 @@ static DemoScene* CreateDemoScene(int nIdx)
     switch (nIdx)
     {
         case DEMO_LIST:
+        {
             pScene = new TableViewContactDemoScene();
+        }
             break;
         case DEMO_DIALOG:
         {

@@ -238,7 +238,6 @@
 		81363C0818EA9FDA00789614 /* DemoScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81363C0418EA9FDA00789614 /* DemoScene.cpp */; };
 		81363C0918EA9FDA00789614 /* VisibleRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81363C0618EA9FDA00789614 /* VisibleRect.cpp */; };
 		81363C1818EAA57400789614 /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 81363C0D18EAA57300789614 /* AppDelegate.h */; };
-		81363C1918EAA57400789614 /* Contact in Sources */ = {isa = PBXBuildFile; fileRef = 81363C0E18EAA57300789614 /* Contact */; };
 		81363C1A18EAA57400789614 /* DemoController.h in Sources */ = {isa = PBXBuildFile; fileRef = 81363C1018EAA57300789614 /* DemoController.h */; };
 		81363C1B18EAA57400789614 /* Demos.h in Sources */ = {isa = PBXBuildFile; fileRef = 81363C1118EAA57300789614 /* Demos.h */; };
 		81363C1C18EAA57400789614 /* DemoScene.h in Sources */ = {isa = PBXBuildFile; fileRef = 81363C1318EAA57400789614 /* DemoScene.h */; };
@@ -255,12 +254,23 @@
 		81363C6618EAB74600789614 /* MainScene.js in Sources */ = {isa = PBXBuildFile; fileRef = 81363C5C18EAB74600789614 /* MainScene.js */; };
 		81363C6718EAB74600789614 /* rank in Resources */ = {isa = PBXBuildFile; fileRef = 81363C5D18EAB74600789614 /* rank */; };
 		81363C6918EAC5F200789614 /* achievementCell.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 81363C6818EAC5F200789614 /* achievementCell.ccbi */; };
-		81A7759B18EBA751000264C8 /* ListView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81A7759618EBA751000264C8 /* ListView.cpp */; };
-		81A7759C18EBA751000264C8 /* DemoLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81A7759818EBA751000264C8 /* DemoLayer.cpp */; };
-		81A775A118EBA7F2000264C8 /* GeneralDialog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81A7759F18EBA7F2000264C8 /* GeneralDialog.cpp */; };
+		81A7759B18EBA751000264C8 /* ListCell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81A7759618EBA751000264C8 /* ListCell.cpp */; };
+		81A775A118EBA7F2000264C8 /* DialogContentLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81A7759F18EBA7F2000264C8 /* DialogContentLayer.cpp */; };
 		81A7764D18EBA9F1000264C8 /* GeneralDialog.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 81A7764C18EBA9F1000264C8 /* GeneralDialog.ccbi */; };
-		81A7765018EBAE11000264C8 /* GeneralDialogLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81A7764E18EBAE11000264C8 /* GeneralDialogLayer.cpp */; };
+		81A7765018EBAE11000264C8 /* DialogLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81A7764E18EBAE11000264C8 /* DialogLayer.cpp */; };
 		81B8CAB918ECDF9100C0F611 /* ListViewLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81B8CAB718ECDF9100C0F611 /* ListViewLayer.cpp */; };
+		81CD43DC18EE3B1F0080A7B5 /* GeneralDialogTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81CD43DA18EE3B1F0080A7B5 /* GeneralDialogTest.cpp */; };
+		81CD43DD18EE3CA40080A7B5 /* DialogContentLayer.h in Sources */ = {isa = PBXBuildFile; fileRef = 81A775A018EBA7F2000264C8 /* DialogContentLayer.h */; };
+		81CD43DE18EE3CA40080A7B5 /* DialogLayer.h in Sources */ = {isa = PBXBuildFile; fileRef = 81A7764F18EBAE11000264C8 /* DialogLayer.h */; };
+		81CD43DF18EE3CA40080A7B5 /* GeneralDialogTest.h in Sources */ = {isa = PBXBuildFile; fileRef = 81CD43DB18EE3B1F0080A7B5 /* GeneralDialogTest.h */; };
+		81CD43E018EE3CA40080A7B5 /* ListViewLayer.h in Sources */ = {isa = PBXBuildFile; fileRef = 81B8CAB818ECDF9100C0F611 /* ListViewLayer.h */; };
+		81CD43E218EE51C90080A7B5 /* heros_bags_scroll_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 81CD43E118EE51C90080A7B5 /* heros_bags_scroll_bar.png */; };
+		81CD43E518EE52460080A7B5 /* sliderProgress.png in Resources */ = {isa = PBXBuildFile; fileRef = 81CD43E318EE52460080A7B5 /* sliderProgress.png */; };
+		81CD43E618EE52460080A7B5 /* sliderThumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 81CD43E418EE52460080A7B5 /* sliderThumb.png */; };
+		81CD43E818EE57980080A7B5 /* sliderTrack.png in Resources */ = {isa = PBXBuildFile; fileRef = 81CD43E718EE57980080A7B5 /* sliderTrack.png */; };
+		81CD43EB18EE845A0080A7B5 /* DemoLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81CD43E918EE845A0080A7B5 /* DemoLayer.cpp */; };
+		81CD43EE18EE87AC0080A7B5 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 81CD43EC18EE87AC0080A7B5 /* button.png */; };
+		81CD43EF18EE87AC0080A7B5 /* buttonHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 81CD43ED18EE87AC0080A7B5 /* buttonHighlighted.png */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -765,7 +775,6 @@
 		81363C0718EA9FDA00789614 /* VisibleRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VisibleRect.h; path = ../Classes/VisibleRect.h; sourceTree = "<group>"; };
 		81363C0C18EAA57300789614 /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = ../Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		81363C0D18EAA57300789614 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../Classes/AppDelegate.h; sourceTree = "<group>"; };
-		81363C0E18EAA57300789614 /* Contact */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Contact; path = ../Classes/Contact; sourceTree = "<group>"; };
 		81363C0F18EAA57300789614 /* DemoController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = DemoController.cpp; path = ../Classes/DemoController.cpp; sourceTree = "<group>"; };
 		81363C1018EAA57300789614 /* DemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DemoController.h; path = ../Classes/DemoController.h; sourceTree = "<group>"; };
 		81363C1118EAA57300789614 /* Demos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Demos.h; path = ../Classes/Demos.h; sourceTree = "<group>"; };
@@ -786,17 +795,25 @@
 		81363C5C18EAB74600789614 /* MainScene.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = MainScene.js; path = "ccb/Published-iOS/MainScene.js"; sourceTree = "<group>"; };
 		81363C5D18EAB74600789614 /* rank */ = {isa = PBXFileReference; lastKnownFileType = folder; name = rank; path = "ccb/Published-iOS/rank"; sourceTree = "<group>"; };
 		81363C6818EAC5F200789614 /* achievementCell.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = achievementCell.ccbi; path = "ccb/Published-iOS/achievementCell.ccbi"; sourceTree = "<group>"; };
-		81A7759618EBA751000264C8 /* ListView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ListView.cpp; sourceTree = "<group>"; };
-		81A7759718EBA751000264C8 /* ListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListView.h; sourceTree = "<group>"; };
-		81A7759818EBA751000264C8 /* DemoLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DemoLayer.cpp; path = ../Classes/LIstView/DemoLayer.cpp; sourceTree = "<group>"; };
-		81A7759918EBA751000264C8 /* DemoLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DemoLayer.h; path = ../Classes/LIstView/DemoLayer.h; sourceTree = "<group>"; };
-		81A7759F18EBA7F2000264C8 /* GeneralDialog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GeneralDialog.cpp; sourceTree = "<group>"; };
-		81A775A018EBA7F2000264C8 /* GeneralDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralDialog.h; sourceTree = "<group>"; };
+		81A7759618EBA751000264C8 /* ListCell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ListCell.cpp; sourceTree = "<group>"; };
+		81A7759718EBA751000264C8 /* ListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListCell.h; sourceTree = "<group>"; };
+		81A7759F18EBA7F2000264C8 /* DialogContentLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DialogContentLayer.cpp; sourceTree = "<group>"; };
+		81A775A018EBA7F2000264C8 /* DialogContentLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialogContentLayer.h; sourceTree = "<group>"; };
 		81A7764C18EBA9F1000264C8 /* GeneralDialog.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = GeneralDialog.ccbi; path = "ccb/Published-iOS/GeneralDialog.ccbi"; sourceTree = "<group>"; };
-		81A7764E18EBAE11000264C8 /* GeneralDialogLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GeneralDialogLayer.cpp; sourceTree = "<group>"; };
-		81A7764F18EBAE11000264C8 /* GeneralDialogLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralDialogLayer.h; sourceTree = "<group>"; };
+		81A7764E18EBAE11000264C8 /* DialogLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DialogLayer.cpp; sourceTree = "<group>"; };
+		81A7764F18EBAE11000264C8 /* DialogLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialogLayer.h; sourceTree = "<group>"; };
 		81B8CAB718ECDF9100C0F611 /* ListViewLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ListViewLayer.cpp; sourceTree = "<group>"; };
 		81B8CAB818ECDF9100C0F611 /* ListViewLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewLayer.h; sourceTree = "<group>"; };
+		81CD43DA18EE3B1F0080A7B5 /* GeneralDialogTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GeneralDialogTest.cpp; sourceTree = "<group>"; };
+		81CD43DB18EE3B1F0080A7B5 /* GeneralDialogTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralDialogTest.h; sourceTree = "<group>"; };
+		81CD43E118EE51C90080A7B5 /* heros_bags_scroll_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heros_bags_scroll_bar.png; sourceTree = "<group>"; };
+		81CD43E318EE52460080A7B5 /* sliderProgress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderProgress.png; sourceTree = "<group>"; };
+		81CD43E418EE52460080A7B5 /* sliderThumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderThumb.png; sourceTree = "<group>"; };
+		81CD43E718EE57980080A7B5 /* sliderTrack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderTrack.png; sourceTree = "<group>"; };
+		81CD43E918EE845A0080A7B5 /* DemoLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DemoLayer.cpp; path = ../Classes/DemoLayer.cpp; sourceTree = "<group>"; };
+		81CD43EA18EE845A0080A7B5 /* DemoLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DemoLayer.h; path = ../Classes/DemoLayer.h; sourceTree = "<group>"; };
+		81CD43EC18EE87AC0080A7B5 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		81CD43ED18EE87AC0080A7B5 /* buttonHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonHighlighted.png; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -1329,8 +1346,8 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				81A7759818EBA751000264C8 /* DemoLayer.cpp */,
-				81A7759918EBA751000264C8 /* DemoLayer.h */,
+				81CD43E918EE845A0080A7B5 /* DemoLayer.cpp */,
+				81CD43EA18EE845A0080A7B5 /* DemoLayer.h */,
 				81A7759E18EBA7AD000264C8 /* Dialog */,
 				81A7759518EBA751000264C8 /* LIstView */,
 				81363C0318EA9FDA00789614 /* Demos.h */,
@@ -1455,7 +1472,6 @@
 			children = (
 				81363C0C18EAA57300789614 /* AppDelegate.cpp */,
 				81363C0D18EAA57300789614 /* AppDelegate.h */,
-				81363C0E18EAA57300789614 /* Contact */,
 				81363C0F18EAA57300789614 /* DemoController.cpp */,
 				81363C1018EAA57300789614 /* DemoController.h */,
 				81363C1118EAA57300789614 /* Demos.h */,
@@ -1800,6 +1816,12 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				81CD43EC18EE87AC0080A7B5 /* button.png */,
+				81CD43ED18EE87AC0080A7B5 /* buttonHighlighted.png */,
+				81CD43E718EE57980080A7B5 /* sliderTrack.png */,
+				81CD43E318EE52460080A7B5 /* sliderProgress.png */,
+				81CD43E418EE52460080A7B5 /* sliderThumb.png */,
+				81CD43E118EE51C90080A7B5 /* heros_bags_scroll_bar.png */,
 				81A7764C18EBA9F1000264C8 /* GeneralDialog.ccbi */,
 				81363C5418EAB74600789614 /* achievement */,
 				81363C5618EAB74600789614 /* ccbResources */,
@@ -1830,8 +1852,8 @@
 		81A7759518EBA751000264C8 /* LIstView */ = {
 			isa = PBXGroup;
 			children = (
-				81A7759618EBA751000264C8 /* ListView.cpp */,
-				81A7759718EBA751000264C8 /* ListView.h */,
+				81A7759618EBA751000264C8 /* ListCell.cpp */,
+				81A7759718EBA751000264C8 /* ListCell.h */,
 				81B8CAB718ECDF9100C0F611 /* ListViewLayer.cpp */,
 				81B8CAB818ECDF9100C0F611 /* ListViewLayer.h */,
 			);
@@ -1842,10 +1864,12 @@
 		81A7759E18EBA7AD000264C8 /* Dialog */ = {
 			isa = PBXGroup;
 			children = (
-				81A7759F18EBA7F2000264C8 /* GeneralDialog.cpp */,
-				81A775A018EBA7F2000264C8 /* GeneralDialog.h */,
-				81A7764E18EBAE11000264C8 /* GeneralDialogLayer.cpp */,
-				81A7764F18EBAE11000264C8 /* GeneralDialogLayer.h */,
+				81A7759F18EBA7F2000264C8 /* DialogContentLayer.cpp */,
+				81A775A018EBA7F2000264C8 /* DialogContentLayer.h */,
+				81A7764E18EBAE11000264C8 /* DialogLayer.cpp */,
+				81A7764F18EBAE11000264C8 /* DialogLayer.h */,
+				81CD43DA18EE3B1F0080A7B5 /* GeneralDialogTest.cpp */,
+				81CD43DB18EE3B1F0080A7B5 /* GeneralDialogTest.h */,
 			);
 			name = Dialog;
 			path = ../Classes/Dialog;
@@ -1920,6 +1944,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81CD43E818EE57980080A7B5 /* sliderTrack.png in Resources */,
+				81CD43EE18EE87AC0080A7B5 /* button.png in Resources */,
 				81363C6518EAB74600789614 /* MainScene.ccbi in Resources */,
 				81363C6118EAB74600789614 /* fileLookup.plist in Resources */,
 				7855E0E1153FEF240059DD9A /* Default.png in Resources */,
@@ -1929,10 +1955,13 @@
 				D4EF949E15BD2D9600D803EB /* Icon-72.png in Resources */,
 				D4EF94A015BD2D9800D803EB /* Icon-144.png in Resources */,
 				81A7764D18EBA9F1000264C8 /* GeneralDialog.ccbi in Resources */,
+				81CD43E218EE51C90080A7B5 /* heros_bags_scroll_bar.png in Resources */,
 				81363C6718EAB74600789614 /* rank in Resources */,
 				81363C5E18EAB74600789614 /* achievement in Resources */,
 				D41A0AD1160F154A004552AE /* Default-568h@2x.png in Resources */,
+				81CD43EF18EE87AC0080A7B5 /* buttonHighlighted.png in Resources */,
 				D446FD6E16102124000ADA7B /* Default@2x.png in Resources */,
+				81CD43E518EE52460080A7B5 /* sliderProgress.png in Resources */,
 				15A3D9961682F7F9002FB0C5 /* CMakeLists.txt in Resources */,
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
 				81363C6018EAB74600789614 /* ccbResources in Resources */,
@@ -1943,6 +1972,7 @@
 				379BB9D017F03F3700829B88 /* json_valueiterator.inl in Resources */,
 				81363C6918EAC5F200789614 /* achievementCell.ccbi in Resources */,
 				81363C6218EAB74600789614 /* font in Resources */,
+				81CD43E618EE52460080A7B5 /* sliderThumb.png in Resources */,
 				81363C2A18EAA77E00789614 /* image in Resources */,
 				379BB9D217F03F3700829B88 /* sconscript in Resources */,
 			);
@@ -1955,9 +1985,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81CD43DD18EE3CA40080A7B5 /* DialogContentLayer.h in Sources */,
+				81CD43DE18EE3CA40080A7B5 /* DialogLayer.h in Sources */,
+				81CD43DF18EE3CA40080A7B5 /* GeneralDialogTest.h in Sources */,
+				81CD43E018EE3CA40080A7B5 /* ListViewLayer.h in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
 				81363C1818EAA57400789614 /* AppDelegate.h in Sources */,
-				81363C1918EAA57400789614 /* Contact in Sources */,
 				81363BF718EA9E3A00789614 /* DemoController.cpp in Sources */,
 				81363C1A18EAA57400789614 /* DemoController.h in Sources */,
 				81363C1B18EAA57400789614 /* Demos.h in Sources */,
@@ -2021,13 +2054,14 @@
 				15A3D99C1682F7F9002FB0C5 /* cpPinJoint.c in Sources */,
 				15A3D99D1682F7F9002FB0C5 /* cpPivotJoint.c in Sources */,
 				15A3D99E1682F7F9002FB0C5 /* cpRatchetJoint.c in Sources */,
+				81CD43DC18EE3B1F0080A7B5 /* GeneralDialogTest.cpp in Sources */,
 				15A3D99F1682F7F9002FB0C5 /* cpRotaryLimitJoint.c in Sources */,
 				15A3D9A01682F7F9002FB0C5 /* cpSimpleMotor.c in Sources */,
 				15A3D9A11682F7F9002FB0C5 /* cpSlideJoint.c in Sources */,
 				15A3D9A21682F7F9002FB0C5 /* cpArbiter.c in Sources */,
 				15A3D9A31682F7F9002FB0C5 /* cpArray.c in Sources */,
 				15A3D9A41682F7F9002FB0C5 /* cpBB.c in Sources */,
-				81A775A118EBA7F2000264C8 /* GeneralDialog.cpp in Sources */,
+				81A775A118EBA7F2000264C8 /* DialogContentLayer.cpp in Sources */,
 				15A3D9A51682F7F9002FB0C5 /* cpBBTree.c in Sources */,
 				15A3D9A61682F7F9002FB0C5 /* cpBody.c in Sources */,
 				15A3D9A71682F7F9002FB0C5 /* cpCollision.c in Sources */,
@@ -2066,7 +2100,7 @@
 				15A3DA461682F826002FB0C5 /* CCScale9SpriteLoader.cpp in Sources */,
 				15A3DA471682F826002FB0C5 /* CCScrollViewLoader.cpp in Sources */,
 				15A3DA481682F826002FB0C5 /* CCSpriteLoader.cpp in Sources */,
-				81A7765018EBAE11000264C8 /* GeneralDialogLayer.cpp in Sources */,
+				81A7765018EBAE11000264C8 /* DialogLayer.cpp in Sources */,
 				15A3DA491682F826002FB0C5 /* CCControl.cpp in Sources */,
 				15A3DA4A1682F826002FB0C5 /* CCControlButton.cpp in Sources */,
 				15A3DA4B1682F826002FB0C5 /* CCControlColourPicker.cpp in Sources */,
@@ -2127,7 +2161,7 @@
 				379BB99817F03F3700829B88 /* CCActionNode.cpp in Sources */,
 				379BB99917F03F3700829B88 /* CCActionObject.cpp in Sources */,
 				379BB99A17F03F3700829B88 /* CCArmatureAnimation.cpp in Sources */,
-				81A7759B18EBA751000264C8 /* ListView.cpp in Sources */,
+				81A7759B18EBA751000264C8 /* ListCell.cpp in Sources */,
 				379BB99B17F03F3700829B88 /* CCProcessBase.cpp in Sources */,
 				379BB99C17F03F3700829B88 /* CCTween.cpp in Sources */,
 				379BB99D17F03F3700829B88 /* CCArmature.cpp in Sources */,
@@ -2169,7 +2203,6 @@
 				379BB9C017F03F3700829B88 /* UIButton.cpp in Sources */,
 				379BB9C117F03F3700829B88 /* UICheckBox.cpp in Sources */,
 				379BB9C217F03F3700829B88 /* UIImageView.cpp in Sources */,
-				81A7759C18EBA751000264C8 /* DemoLayer.cpp in Sources */,
 				379BB9C317F03F3700829B88 /* UILabel.cpp in Sources */,
 				379BB9C417F03F3700829B88 /* UILabelAtlas.cpp in Sources */,
 				379BB9C517F03F3700829B88 /* UILabelBMFont.cpp in Sources */,
@@ -2184,6 +2217,7 @@
 				379BB9D117F03F3700829B88 /* json_writer.cpp in Sources */,
 				379BB9D317F03F3700829B88 /* CCSGUIReader.cpp in Sources */,
 				379BB9D417F03F3700829B88 /* CCSSceneReader.cpp in Sources */,
+				81CD43EB18EE845A0080A7B5 /* DemoLayer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
