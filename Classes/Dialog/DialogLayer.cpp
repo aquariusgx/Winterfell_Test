@@ -8,6 +8,7 @@
 
 #include "DialogContentLayer.h"
 #include "DialogLayer.h"
+#include "ActionContent.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -18,18 +19,11 @@ CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
 CCPoint origin = CCDirector::sharedDirector()->getVisibleOrigin();
 
 
-GeneralLayer::GeneralLayer(CCLayer* node)
+GeneralLayer::GeneralLayer(CCLayer* node, ACTIONCONTENT index)
 {
     layer = node;
-    
-    CCAction* popup = CCSequence::create(
-                                              CCScaleTo::create(0.06, 0.7),
-                                              
-                                              CCScaleTo::create(0.08, 0.95),
-                                              
-                                              CCScaleTo::create(0.08, 0.9),
-                                              
-                                              NULL);
+
+    CCAction* popup = ActionContent::actionContent(index);
     layer->runAction(popup);
     layer->setPosition(ccp(0, (960-374)/2));
     addChild(layer);

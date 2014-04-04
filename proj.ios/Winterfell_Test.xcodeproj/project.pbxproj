@@ -271,6 +271,8 @@
 		81CD43EB18EE845A0080A7B5 /* DemoLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81CD43E918EE845A0080A7B5 /* DemoLayer.cpp */; };
 		81CD43EE18EE87AC0080A7B5 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 81CD43EC18EE87AC0080A7B5 /* button.png */; };
 		81CD43EF18EE87AC0080A7B5 /* buttonHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 81CD43ED18EE87AC0080A7B5 /* buttonHighlighted.png */; };
+		81CD43F318EEAC590080A7B5 /* ActionContent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81CD43F118EEAC590080A7B5 /* ActionContent.cpp */; };
+		81CD43F418EEAE980080A7B5 /* ActionContent.h in Sources */ = {isa = PBXBuildFile; fileRef = 81CD43F218EEAC590080A7B5 /* ActionContent.h */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -814,6 +816,8 @@
 		81CD43EA18EE845A0080A7B5 /* DemoLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DemoLayer.h; path = ../Classes/DemoLayer.h; sourceTree = "<group>"; };
 		81CD43EC18EE87AC0080A7B5 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		81CD43ED18EE87AC0080A7B5 /* buttonHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonHighlighted.png; sourceTree = "<group>"; };
+		81CD43F118EEAC590080A7B5 /* ActionContent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ActionContent.cpp; path = ../Classes/ActionContent.cpp; sourceTree = "<group>"; };
+		81CD43F218EEAC590080A7B5 /* ActionContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionContent.h; path = ../Classes/ActionContent.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -1361,6 +1365,8 @@
 				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
 				1AFAF8B516D35DE700DB1158 /* HelloWorldScene.cpp */,
 				1AFAF8B616D35DE700DB1158 /* HelloWorldScene.h */,
+				81CD43F118EEAC590080A7B5 /* ActionContent.cpp */,
+				81CD43F218EEAC590080A7B5 /* ActionContent.h */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -1985,6 +1991,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81CD43F418EEAE980080A7B5 /* ActionContent.h in Sources */,
 				81CD43DD18EE3CA40080A7B5 /* DialogContentLayer.h in Sources */,
 				81CD43DE18EE3CA40080A7B5 /* DialogLayer.h in Sources */,
 				81CD43DF18EE3CA40080A7B5 /* GeneralDialogTest.h in Sources */,
@@ -2156,6 +2163,7 @@
 				1AB87035175E0A84005D39BF /* WebSocket.cpp in Sources */,
 				1A9CE8781765A12C000E3062 /* AssetsManager.cpp in Sources */,
 				379BB99517F03F3700829B88 /* CCActionFrame.cpp in Sources */,
+				81CD43F318EEAC590080A7B5 /* ActionContent.cpp in Sources */,
 				379BB99617F03F3700829B88 /* CCActionFrameEasing.cpp in Sources */,
 				379BB99717F03F3700829B88 /* CCActionManager.cpp in Sources */,
 				379BB99817F03F3700829B88 /* CCActionNode.cpp in Sources */,

@@ -11,6 +11,7 @@
 
 #include "cocos2d.h"
 #include "cocos-ext.h"
+#include "ActionContent.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -19,7 +20,7 @@ class GeneralLayer :
 public CCLayer
 {
 public:
-    GeneralLayer(CCLayer* layer);
+    GeneralLayer(CCLayer* layer, ACTIONCONTENT index = ACTION_POPUP);
     
     ~GeneralLayer();
     void closeLayer();
